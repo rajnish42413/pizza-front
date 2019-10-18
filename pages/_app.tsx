@@ -1,23 +1,17 @@
 import React from "react";
 import "antd/dist/antd.css";
+import '../css/variables.scss';
 import App, { Container } from "next/app";
 import { Provider } from "react-redux";
 import Axios from "axios";
 import store from "../store";
-import Cookie from "js-cookie";
+
+import "../css/app.scss";
 
 if (typeof document !== "undefined") {
-    Axios.defaults.baseURL = "http://localhost:8001/";
+    Axios.defaults.baseURL = "https://backend-pizza.herokuapp.com";
     Axios.defaults.headers.common["Accept"] = "application/json";
     Axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
-    
-    const token = Cookie.get('token');
-    if (token) {
-        Axios.defaults.headers.common['Authorization'] = `${token}`;
-      } else {
-    Axios.defaults.headers.common['Authorization'] = '';
-    delete Axios.defaults.headers.common['Authorization'];
-    }
 }
 
 class MyApp extends App {

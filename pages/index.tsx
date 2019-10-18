@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Common from '../components/layouts/App';
-import { Row, Col, Card, PageHeader,message} from 'antd';
-
+import Loader from '../components/loader';
+import { Row, Col, Card, PageHeader,message,Skeleton ,Spin} from 'antd';
 import axios from "axios";
 import Link from 'next/link';
+
+
 const { Meta } = Card;
 
 interface IState {
@@ -13,21 +15,20 @@ export default class Home extends Component<IState>{
 
   state = {
         pizzas: null ,
-        baseUrl : 'http://localhost:80001/'
+        baseUrl : 'https://backend-pizza.herokuapp.com/'
     }
 
   componentDidMount(){
     this.getData();
-    console.log(this.state);
-  }
+   }
 
 async getData() {
-  axios.get('pizza')
+  await axios.get('pizza')
     .then(response => {
       this.setState({ pizzas: [ ...response.data]});
     })
-    .catch(function (error) {
-        message.error(error);
+    .catch(function (err) {
+       message.error(err);
     })
   }
 
@@ -39,6 +40,7 @@ render() {
                <Row gutter={16}>
                   {this.state.pizzas.map((pizza, i) =>
                   <Col span={6} key={i}>
+                  <Link href={'/pizzamaker?slug='+pizza.name} as={'pizza/'+pizza.slug}>
                         <Card
                            style={{ margin:'20px'}}
                             hoverable
@@ -46,10 +48,11 @@ render() {
                         >
                         <Meta title={pizza.name} />
                      </Card>
+                     </Link>
                   </Col>
                   )}
               </Row>
-              ): null }
+              ): <Loader/> }
           </Common>
         </>
     )
