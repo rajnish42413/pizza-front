@@ -1,42 +1,27 @@
 {
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "babel-plugin-import": "^1.12.2",
+    "sass": "^1.23.0",
+    "typescript": "^3.6.4"
+  },
   "dependencies": {
-    "@zeit/next-less": "^1.0.1",
-    "antd": "^3.20.5",
+    "@types/axios": "^0.14.0",
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "@types/react-router-dom": "^5.1.0",
+    "@types/styled-components": "^4.1.19",
+    "antd": "^3.24.2",
     "axios": "^0.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.0.0",
-    "js-cookie": "^2.2.0",
     "less": "^3.10.3",
-    "lodash": "^4.17.15",
-    "next": "^9.1.1",
-    "next-cookies": "^1.1.2",
-    "node-sass": "^4.12.0",
-    "nprogress": "^0.2.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-redux": "^7.1.0",
-    "react-tackle-box": "^2.1.0",
-    "redux": "^4.0.4",
-    "socket.io": "^2.2.0"
-  },
-  "scripts": {
-    "watch:tsc": "tsc --project api --watch",
-    "watch:next": "next",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.5",
-    "@types/dotenv": "^6.1.1",
-    "@types/lodash": "^4.14.136",
-    "@types/react": "^16.8.23",
-    "@types/react-redux": "^7.1.1",
-    "@types/redux": "^3.6.0",
-    "@zeit/next-css": "^1.0.1",
-    "@zeit/next-sass": "^1.0.1",
-    "concurrently": "^4.1.1",
-    "cross-env": "^5.2.1",
-    "typescript": "^3.5.3"
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^4.4.0"
   }
 }
