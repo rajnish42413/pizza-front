@@ -118,6 +118,7 @@ header{
 
 .ant-card-meta-title{
   font-family: $fontfamily-1;
+  font-size: 1.5em;
   text-transform: capitalize;
 }
 
@@ -185,7 +186,7 @@ box-shadow: 11px 0px 9px -2px rgba(0,0,0,0.29);
 }
 
   .ant-badge-status-text{
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: $fontfamily-1;
     text-transform: capitalize;
   }
