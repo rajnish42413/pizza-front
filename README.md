@@ -1,4 +1,5 @@
 # Innoscripta Pizza Project
+  <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1571575138/pizza-project/screencapture-localhost-1234-2019-10-20-18_04_33.png" width="30%" height="auto">
   <a href="https://inspiring-pare-9849a7.netlify.com/">DEMO HERE</a>  
   or
   ```bash
