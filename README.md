@@ -1,10 +1,8 @@
 # Innoscripta Pizza Project
 
 ## DEMO
-  <a href="https://inspiring-pare-9849a7.netlify.com/">DEMO HERE</a>
-  
+  <a href="https://inspiring-pare-9849a7.netlify.com/">DEMO HERE</a>  
   or
-  
   ```bash
   https://inspiring-pare-9849a7.netlify.com/
   ```
