@@ -1,6 +1,4 @@
-# Innoscripta Pizza Project
-
-## DEMO
+# Innoscripta Pizza Project  - <p>Order Top 10 Pizza</p>
   <a href="https://inspiring-pare-9849a7.netlify.com/">DEMO HERE</a>  
   or
   ```bash
