@@ -9,7 +9,7 @@
 ## Getting Started
 
 ### Prerequisites
-   Parcel : Parcel is a web application bundler, differentiated by its developer experience
+  Install Parcel : Parcel is a web application bundler, differentiated by its developer experience
    
 ```bash
 yarn global add parcel-bundler
@@ -33,7 +33,7 @@ or
    parcel index.html 
 ```
 
-and visit [http://localhost:8000](http://localhost:1234) to see the application in action.
+and visit [http://localhost:1234](http://localhost:1234) to see the application in action.
 
 ## Built With
 * [React](https://reactjs.org) - A JavaScript library for building user interfaces
