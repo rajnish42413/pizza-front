@@ -8,7 +8,7 @@ import Loader from './loder/loader';
 import { Link } from "react-router-dom";
 import Info  from "./Info";
 import { withRouter } from 'react-router-dom';
-
+import Description from "./Description" ;
 const { confirm } = Modal;
 
 
@@ -191,7 +191,10 @@ render() {
                <Col span={24} className="pizzamaker-box" >
                 <Row>
                 <Col span={16} className="pizzamaker-toppings">
-              { this.state.pizza && <h1 className="pizza-tittle"> { this.state.pizza.name} </h1> }
+                 { this.state.pizza && 
+                    <h1 className="pizza-tittle"> { this.state.pizza.name} 
+                    <Description toppings={this.state.pizza.toppings} /> </h1>   
+                 }
                   <h1 className="pizza-tittle"><b>TOTAL PRICE :</b> $ {this.state.basePrice} </h1>
                       <Form labelCol={{ span: 16 }} wrapperCol={{ span: 8 }} onSubmit={this.handleSubmit}>
                        <Form.Item label="Select Pizza Size" className="select-size">

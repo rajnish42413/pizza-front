@@ -24488,6 +24488,7 @@ header h1::after {
 
 .ant-card-meta-title {
   font-family: "Trochut", cursive;
+  text-transform: capitalize;
 }
 
 .ant-card-hoverable:hover {
@@ -24496,8 +24497,7 @@ header h1::after {
 }
 
 .ant-card-hoverable:hover .ant-card-body, .ant-card-hoverable:hover .ant-card-meta-title {
-  background-color: #FF9800;
-  color: #fff;
+  color: #FF9800;
 }
 
 .pizzamaker-box {
@@ -24545,6 +24545,18 @@ header h1::after {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.description {
+  height: 63px;
+}
+.description .ant-badge {
+  padding: 0 0.5rem;
+}
+.description .ant-badge-status-text {
+  font-size: 0.8em;
+  font-family: "Trochut", cursive;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=/src.f10117fe.css.map */
