@@ -20,17 +20,20 @@ const { Meta } = Card;
 
 interface IState {
  pizzas: IPizza[];
+ loading:boolean;
 }
 
 
 export default class Home extends Component<IState>{
 
    state = {
-        pizzas: []
+        pizzas: [],
+        loading:false
     };
 
   componentDidMount(){
     this.getData();
+    this.setState({loading:true});
    }
 
 async getData() {
@@ -42,10 +45,10 @@ render() {
   return (
         <>
           <Common>
-              { this.state.pizzas ? (
+              { this.state.loading ? (
                <Row gutter={16}>
                   {this.state.pizzas.map((pizza:IPizza, i) =>
-                  <Col span={8} key={i}>
+                  <Col xs={{ span: 12 }} lg={{ span: 8 }} key={i}>
                    <Link to={`/pizzas/${pizza.slug}`}>
                         <Card
                            style={{ margin:'20px'}}

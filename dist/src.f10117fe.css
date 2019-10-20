@@ -24423,6 +24423,20 @@ div.ant-typography-edit-content {
 @import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Trochut&display=swap");
 /* Using SCSS variables to store breakpoints */
+.ant-btn-primary {
+  background-color: #FF9800;
+  border-color: #FF9800;
+  text-shadow: 0 -1px 0 rgba(255, 152, 0, 0.19);
+  -webkit-box-shadow: 0 10px 16px 0 rgba(255, 152, 0, 0.2), 0 6px 20px 0 rgba(255, 152, 0, 0.19);
+  box-shadow: 0 10px 16px 0 rgba(255, 152, 0, 0.2), 0 6px 20px 0 rgba(255, 152, 0, 0.19);
+}
+
+.ant-btn:hover, .ant-btn:focus {
+  color: #fff;
+  background-color: #FF9800;
+  border-color: #FF9800;
+}
+
 header {
   padding: 3rem 0;
   text-align: center;
@@ -24457,7 +24471,6 @@ header h1::after {
 @media (max-width: 1200px) {
   .ant-layout-content {
     padding: 0 5%;
-    border: 1px solid red;
   }
 }
 @media (max-width: 992px) {

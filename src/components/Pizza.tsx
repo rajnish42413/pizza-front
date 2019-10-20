@@ -190,7 +190,7 @@ render() {
             <Row>
                <Col span={24} className="pizzamaker-box" >
                 <Row>
-                <Col span={16} className="pizzamaker-toppings">
+                <Col xs={{ span: 22 }} lg={{ span: 16 }} className="pizzamaker-toppings">
                  { this.state.pizza && 
                     <h1 className="pizza-tittle"> { this.state.pizza.name} 
                     <Description toppings={this.state.pizza.toppings} /> </h1>   

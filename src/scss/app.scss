@@ -17,6 +17,19 @@ $breakpoint-xs: 576px;
 $antd-wave-shadow-color: #FF9800;
 $primary-color: #FF9800;
 
+.ant-btn-primary{
+ background-color:$themecolor;
+ border-color: $themecolor;
+ text-shadow: 0 -1px 0 rgba(255,152,0,0.19);
+ -webkit-box-shadow:0 10px 16px 0 rgba(255,152,0,0.2),0 6px 20px 0 rgba(255,152,0,0.19);
+  box-shadow:0 10px 16px 0 rgba(255,152,0,0.2),0 6px 20px 0 rgba(255,152,0,0.19);
+}
+
+.ant-btn:hover, .ant-btn:focus {
+    color: #fff;
+    background-color:$themecolor;
+    border-color: $themecolor;
+}
 
 header{
     padding: 3rem 0;
@@ -62,7 +75,6 @@ header{
 @media (max-width: $breakpoint-lg){
  .ant-layout-content {
   padding: 0 5%;
-  border:1px solid red;
   }
 }
 
