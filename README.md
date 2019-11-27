@@ -1,4 +1,4 @@
-# Innoscripta Pizza Project
+# Pizza Project
  <div style="width:100%"height="510px" >
   <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1571575138/pizza-project/screencapture-localhost-1234-2019-10-20-18_04_33.png" width="30%" height="300px" style="padding:5%">
   <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1571575132/pizza-project/screencapture-localhost-1234-pizzas-margherita-classic-2019-10-20-18_04_08.png" width="30%" height="300px" style="padding:5%">
